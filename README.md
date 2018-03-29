@@ -7,12 +7,15 @@ The number of classes can be extended by configuring the model and training it w
 
 # Environment Setup
 1. Install Python 3.6
+
    Create environment variables PYTHONPATH, and add the path of directory Python36, Python36\Lib, Python36\DLLs, Python36\Scripts to    PYTHONPATH. Add PYTHONPATH to PATH environment variable.  
    
 2. Install tensorflow
+
    pip3 install --upgrade tensorflow
 
 3. Install other dependencies
+
    pip install Cython
    pip install pillow
    pip install lxml
@@ -21,20 +24,23 @@ The number of classes can be extended by configuring the model and training it w
    
 4. Download Google Protobuf Windows v3.4.0 release “protoc-3.4.0-win32.zip” from https://github.com/google/protobuf/releases
 
-Extract the Protobuf download to Program Files, i.e., C:\Program Files\protoc-3.4.0-win32
+   Extract the Protobuf download to Program Files, i.e., C:\Program Files\protoc-3.4.0-win32
 
 5. Clone the tensorflow model repository.
+   
    git clone https://github.com/tensorflow/models.git 
    
-   Add the directories of models\research; models\research\slim; models\research\object_detection; models\research\object_detection\utils; to PYTHONPATH environment variable
-   
+   Add the path of models\research; models\research\slim; models\research\object_detection; models\research\object_detection\utils; to PYTHONPATH environment variable
    
    cd path_to_tensorflow\models\research
-   Execute the following command to compile Protobuf libraries
+   
+   Execute the following command to compile Protobuf libraries:
+   
    “C:\Program Files\protoc-3.4.0-win32\bin\protoc.exe” object_detection/protos/*.proto --python_out=.
 
 6. Clone this WomenApparelDetection repository.
-   git clone
+
+   git clone https://github.com/jimingh/WomenApparelDetection.git
    
 # To Run the Code
 Navigate to WomenApparelDetection directory, copy and paste the images that will be segmented into InputImages folder. Execute imageSeg.py, which will generate segmentation results.
