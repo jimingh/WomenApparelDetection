@@ -5,7 +5,7 @@ blouse, dress, hat, pants, shorts, skirt
 
 The number of classes can be extended by configuring the model and training it with more data.
 
-# Environment Setup
+# Environment Setup (Windows 7)
 1. Install Python 3.6
 
    Create environment variables **PYTHONPATH**, and add the path of directory **Python36; Python36\Lib; Python36\DLLs; Python36\Scripts** to    **PYTHONPATH**. Add **PYTHONPATH** to **PATH** environment variable.  
