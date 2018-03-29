@@ -1,0 +1,29 @@
+item {
+  id: 1
+  name: 'blouse'
+}
+
+item {
+  id: 2
+  name: 'dress'
+}
+
+item {
+  id: 3
+  name: 'hat'
+}
+
+item {
+  id: 4
+  name: 'pants'
+}
+
+item {
+  id: 5
+  name: 'shorts'
+}
+
+item {
+  id: 6
+  name: 'skirt'
+}
