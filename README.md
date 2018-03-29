@@ -8,7 +8,7 @@ The number of classes can be extended by configuring the model and training it w
 # Environment Setup
 1. Install Python 3.6
 
-   Create environment variables PYTHONPATH, and add the path of directory Python36, Python36\Lib, Python36\DLLs, Python36\Scripts to    PYTHONPATH. Add PYTHONPATH to PATH environment variable.  
+   Create environment variables **PYTHONPATH**, and add the path of directory **Python36; Python36\Lib; Python36\DLLs; Python36\Scripts** to    **PYTHONPATH**. Add **PYTHONPATH** to **PATH** environment variable.  
    
 2. Install tensorflow
 
@@ -31,21 +31,29 @@ The number of classes can be extended by configuring the model and training it w
    Extract the Protobuf download to Program Files, i.e., C:\Program Files\protoc-3.4.0-win32
 
 5. Clone the tensorflow model repository.
+
+```   
+   git clone https://github.com/tensorflow/models.git
+```
    
-   git clone https://github.com/tensorflow/models.git 
-   
-   Add the path of models\research; models\research\slim; models\research\object_detection; models\research\object_detection\utils; to PYTHONPATH environment variable
-   
+   Add the path of **models\research; models\research\slim; models\research\object_detection; models\research\object_detection\utils** to **PYTHONPATH** environment variable
+ 
+ ```
    cd path_to_tensorflow\models\research
-   
+ ```
+ 
    Execute the following command to compile Protobuf libraries:
-   
+
+```   
    “C:\Program Files\protoc-3.4.0-win32\bin\protoc.exe” object_detection/protos/*.proto --python_out=.
+```
 
 6. Clone this WomenApparelDetection repository.
 
+```
    git clone https://github.com/jimingh/WomenApparelDetection.git
-   
+```
+
 # To Run the Code
 Navigate to WomenApparelDetection directory, copy and paste the images that will be segmented into InputImages folder. Execute imageSeg.py, which will generate segmentation results.
 
