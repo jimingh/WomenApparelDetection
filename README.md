@@ -12,16 +12,20 @@ The number of classes can be extended by configuring the model and training it w
    
 2. Install tensorflow
 
+```
    pip3 install --upgrade tensorflow
+```
 
 3. Install other dependencies
 
+```
    pip install Cython
    pip install pillow
    pip install lxml
    pip install jupyter
    pip install matplotlib
-   
+ ```
+ 
 4. Download Google Protobuf Windows v3.4.0 release “protoc-3.4.0-win32.zip” from https://github.com/google/protobuf/releases
 
    Extract the Protobuf download to Program Files, i.e., C:\Program Files\protoc-3.4.0-win32
