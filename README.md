@@ -10,7 +10,7 @@ The number of classes can be extended by configuring the model and training it w
 
    Create environment variables **PYTHONPATH**, and add the path of directory **Python36; Python36\Lib; Python36\DLLs; Python36\Scripts** to    **PYTHONPATH**. Add **PYTHONPATH** to **PATH** environment variable.  
    
-2. Install tensorflow
+2. Install TensorFlow
 
 ```
    pip3 install --upgrade tensorflow
