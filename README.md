@@ -45,7 +45,7 @@ The number of classes can be extended by configuring the model and training it w
    Execute the following command to compile Protobuf libraries:
 
 ```   
-   “C:\Program Files\protoc-3.4.0-win32\bin\protoc.exe” object_detection/protos/*.proto --python_out=.
+   "C:\Program Files\protoc-3.4.0-win32\bin\protoc.exe" object_detection/protos/*.proto --python_out=.
 ```
 
 6. Clone this WomenApparelDetection repository.
