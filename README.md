@@ -1,4 +1,4 @@
-# WomenApparelDetection
+# Women Apparel Detection
 This project is an implementation of TensorFlow Object Detection API for detection of women's apparel. The following six classes are handled in this project:
 
 blouse, dress, hat, pants, shorts, skirt
@@ -30,7 +30,7 @@ The number of classes can be extended by configuring the model and training it w
 
    Extract the Protobuf download to Program Files, i.e., C:\Program Files\protoc-3.4.0-win32
 
-5. Clone the tensorflow model repository.
+5. Clone the Tensorflow model repository.
 
 ```   
    git clone https://github.com/tensorflow/models.git
