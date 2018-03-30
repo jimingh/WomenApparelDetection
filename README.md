@@ -57,7 +57,7 @@ The number of classes can be extended by configuring the model and training it w
 ```
 
 # To Run the Code
-Navigate to **WomenApparelDetection** directory, copy and paste the images that will be segmented into **InputImages** folder. Execute **imageSeg.py**, which will generate segmentation results. Some examples are shown below.
+Navigate to **WomenApparelDetection** directory, copy and paste the images that will be segmented into **InputImages** folder. Execute ```python imageSeg.py```, which will generate segmentation results. Some examples are shown below.
 
 ![image](OutputImages/1.jpg) ![image](OutputImages/2.jpg) ![image](OutputImages/3.jpg)
 
