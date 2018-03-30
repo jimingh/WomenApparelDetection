@@ -59,7 +59,7 @@ The number of classes can be extended by configuring the model and training it w
 # To Run the Code
 Navigate to **WomenApparelDetection** directory, copy and paste the images that will be segmented into **InputImages** folder. Execute **imageSeg.py**, which will generate segmentation results. Some examples are shown below.
 
-![image](OutputImages/1.jpg) ![image](OutputImages/2.jpg) ![image](OutputImages/4.jpg)
+![image](OutputImages/1.jpg) ![image](OutputImages/2.jpg) ![image](OutputImages/3.jpg)
 
 # Brief Description of Method
 Faster R-CNN, R-FCN and SSD currently are the three best and most widely used object detection models. TensorFlow Object Detection API is utilzed in this project to implement the object detection models. Actually I intended to use Faster R-CNN models at the beginning as Faster R-CNN can achieve the best accuracy in general. Unfortunately, I found there is a bug of the Object Detection API for Python 3 compatibility which does not allow training of Faster R-CNN model faster_rcnn_inception_resnet_v2_atrous_coco in Windows OS. Considering the fact that I do not have a Linux system in hand, I choose SSD model instead, which has faster speed and comparable accuracy.
