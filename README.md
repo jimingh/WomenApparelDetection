@@ -37,6 +37,8 @@ The number of classes can be extended by configuring the model and training it w
 ```
    
    Add the path of **models\research; models\research\slim; models\research\object_detection; models\research\object_detection\utils** to **PYTHONPATH** environment variable. Restart computer to update **PATH** variable.
+   
+   cd to the path of models\research
  
  ```
    cd path_to_tensorflow\models\research
