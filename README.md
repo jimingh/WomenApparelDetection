@@ -28,7 +28,7 @@ The number of classes can be extended by configuring the model and training it w
  
 4. Download Google Protobuf Windows v3.4.0 release “protoc-3.4.0-win32.zip” from https://github.com/google/protobuf/releases
 
-   Extract the Protobuf zip file to Program Files, i.e., C:\Program Files\protoc-3.4.0-win32
+   Extract the Protobuf zip file to Program Files folder, i.e., C:\Program Files\protoc-3.4.0-win32
 
 5. Clone the TensorFlow model repository.
 
