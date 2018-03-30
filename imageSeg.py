@@ -14,7 +14,6 @@ if tf.__version__ < '1.4.0':
 # turn off GPU mode
 # os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
-
 def load_image(image):
   (im_width, im_height) = image.size
   return np.array(image.getdata()).reshape((im_height, im_width, 3)).astype(np.uint8)
