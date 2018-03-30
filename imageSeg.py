@@ -11,7 +11,8 @@ from utils import visualization_utils as vis_util
 if tf.__version__ < '1.4.0':
   raise ImportError('Please upgrade your tensorflow installation to v1.4.* or later!')
   
-#os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+# turn off CUDA
+# os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 
 def load_image(image):
