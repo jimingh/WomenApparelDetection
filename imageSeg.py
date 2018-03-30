@@ -11,15 +11,14 @@ from utils import visualization_utils as vis_util
 if tf.__version__ < '1.4.0':
   raise ImportError('Please upgrade your tensorflow installation to v1.4.* or later!')
   
-#os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 
-def load_image_into_numpy_array(image):
+def load_image(image):
   (im_width, im_height) = image.size
-  return np.array(image.getdata()).reshape(
-      (im_height, im_width, 3)).astype(np.uint8)
+  return np.array(image.getdata()).reshape((im_height, im_width, 3)).astype(np.uint8)
 
-def run_inference_for_single_image(image, graph):
+def detect_single_image(image, graph):
   with graph.as_default():
     with tf.Session() as sess:
       # Get handles to input and output tensors
@@ -69,11 +68,11 @@ def main():
         image = Image.open(image_path)
    
     # Array based representation of the image 
-        image_np = load_image_into_numpy_array(image)
+        image_np = load_image(image)
     # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
         image_np_expanded = np.expand_dims(image_np, axis=0)
     # Actual detection.
-        output_dict = run_inference_for_single_image(image_np, detection_graph)
+        output_dict = detect_single_image(image_np, detection_graph)
     # Visualization of the results of a detection.
         vis_util.visualize_boxes_and_labels_on_image_array(
             image_np,
